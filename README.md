@@ -3,6 +3,7 @@
 This project implements a Convolutional Neural Network (CNN) for MNIST digit classification with an emphasis on model efficiency and automated testing through CI/CD.
 
 ## Project Structure
+```
 ├── .github/
 │ └── workflows/
 │ └── ml-pipeline.yml
@@ -15,6 +16,7 @@ This project implements a Convolutional Neural Network (CNN) for MNIST digit cla
 ├── main.py # Main execution script
 ├── requirements.txt # Project dependencies
 └── pytest.ini # Pytest configuration
+```
 
 ## Model Architecture
 - Input: 28x28 grayscale images
