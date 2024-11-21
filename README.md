@@ -56,6 +56,9 @@ The automated tests verify:
 - Training capability
 - Inference capability
 - Model accuracy (> 95%)
+- Training dynamics (gradient flow)
+- Hardware compatibility (device movement)
+- Numerical stability (batch invariance)
 
 ## Model Saving
 Models are saved with state dictionaries in the `models/` directory with the format: models/mnist_model.pth
