@@ -31,20 +31,10 @@ jobs:
         python test.py
     
     - name: Upload trained model
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v3
       with:
         name: trained-model
         path: models/*.pth
-    
-    - name: Upload test results
-      if: always()  # Upload test results even if tests fail
-      uses: actions/upload-artifact@v2
-      with:
-        name: test-results
-        path: |
-          .coverage
-          coverage.xml
-          htmlcov/
     
     - name: Check model directory
       if: always()  # Run this step even if previous steps fail
