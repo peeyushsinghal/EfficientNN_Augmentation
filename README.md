@@ -1,3 +1,4 @@
+[![ML Pipeline](https://github.com/peeyushsinghal/EfficientNN_Augmentation/actions/workflows/ml-pipeline.yml/badge.svg)](https://github.com/peeyushsinghal/EfficientNN_Augmentation/actions/workflows/ml-pipeline.yml)
 # MNIST CNN Classification Project
 
 This project implements a Convolutional Neural Network (CNN) for MNIST digit classification with an emphasis on model efficiency and automated testing through CI/CD.
