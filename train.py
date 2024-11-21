@@ -17,8 +17,15 @@ def train_model():
     # Set device
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
     
-    # Load MNIST dataset
+    # Load MNIST dataset with augmentation
     transform = transforms.Compose([
+        transforms.RandomRotation(degrees=7),  # Random rotation ±7 degrees
+        transforms.ToTensor(),
+        transforms.Normalize((0.1307,), (0.3081,))
+    ])
+    
+    # Test transform without augmentation
+    test_transform = transforms.Compose([
         transforms.ToTensor(),
         transforms.Normalize((0.1307,), (0.3081,))
     ])
@@ -39,6 +46,7 @@ def train_model():
     # Train for 1 epoch
     model.train()
     print(f"Training started on {device}")
+    print("Data augmentation: Random rotation ±7 degrees")
     print("-" * 50)
     
     for batch_idx, (data, target) in enumerate(train_loader):
