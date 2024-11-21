@@ -60,4 +60,5 @@ Models are saved with state dictionaries in the `models/` directory with the for
 ## Notes
 - The model is designed to be lightweight while maintaining high accuracy
 - Training logs display both loss and accuracy metrics
+- Data augmentation helps improve model robustness
 - All tests must pass and accuracy must exceed 95% for successful CI/CD pipeline completion
